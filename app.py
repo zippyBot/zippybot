@@ -42,11 +42,11 @@ def handle_message(event):
     if "hallo" in msg:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text=Hello apa kabar?))
+            TextSendMessage(text="Hello apa kabar?"))
     elif "apa kabar" in msg:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text=baik, alhamdulillah))
+            TextSendMessage(text="baik, alhamdulillah"))
     else :
         line_bot_api.reply_message(
             event.reply_token,
